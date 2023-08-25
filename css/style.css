@@ -85,6 +85,9 @@ p {
     max-width: 100%;
 }
 
+.landing .pic {
+    transform: 1s;
+}
 .landing .pic-1 {
     width: 90%;
     margin: auto;
@@ -104,6 +107,46 @@ p {
     font-size: 1.5rem;
 }
 /* End Landing */
+
+/* Start Information */
+.information {
+    position: relative;
+    padding: 5rem;
+}
+
+.information-2 {
+    background-color: var(--sec-color);
+    padding: 2rem;
+}
+
+.information::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 30%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.information h2,
+.information-2 h2 {
+    color: var(--main-color);
+}
+
+.information p,
+.information-2 p {
+    font-size: 1.5rem;
+}
+
+.information-2 .pics .man {
+    top: 75%;
+    left: 50%;
+    width: 40%;
+}
+/* End Information */
 
 /* Start Media */
 @media (max-width: 992px) {
@@ -132,6 +175,21 @@ p {
         font-size: 1rem;
     }
     /* End Landing */
+
+    /* Start Information */
+    .heading-2 {
+        font-size: 1.5rem;
+    }
+
+    .information {
+        text-align: center;
+        background-color: #eee;
+    }
+
+    .information::after {
+        display: none;
+    }
+    /* End Information */
 }
 
 @media (max-width: 768px) {
@@ -159,5 +217,18 @@ p {
         font-size: 1rem;
     }
     /* End Landing */
+    /* Start Information */
+    .heading-2 {
+        font-size: 1.2rem;
+    }
+
+    .information {
+        padding: 0;
+    }
+
+    .information p {
+        font-size: 1rem;
+    }
+    /* End Information */
 }
 /* End Media */
