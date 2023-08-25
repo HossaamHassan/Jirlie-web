@@ -46,7 +46,7 @@ p {
 }
 
 .navbar {
-    webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
@@ -94,7 +94,7 @@ p {
 }
 
 .landing .pic .pic-2 {
-    top: 74%;
+    top: 70%;
     right: -4%;
 }
 
@@ -117,6 +117,7 @@ p {
 .information-2 {
     background-color: var(--sec-color);
     padding: 2rem;
+    margin-top: 5rem;
 }
 
 .information::after {
@@ -126,25 +127,49 @@ p {
     left: -24px;
     width: 30%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: #bdd7ff;
     z-index: -1;
     border-radius: 20px;
 }
 
 .information h2,
-.information-2 h2 {
+.information-2 h2, 
+.information-3 h2{
     color: var(--main-color);
 }
 
 .information p,
-.information-2 p {
+.information-2 p, 
+.information-3 p{
     font-size: 1.5rem;
+}
+
+.information-2 .info-btn,
+.information-3 .info-btn {
+    margin: 2rem auto;
 }
 
 .information-2 .pics .man {
     top: 75%;
     left: 50%;
     width: 40%;
+}
+
+
+.information-3 {
+    margin-top: 5rem;
+}
+
+.information-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 30%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    border-radius: 20px;
 }
 /* End Information */
 
@@ -181,13 +206,28 @@ p {
         font-size: 1.5rem;
     }
 
-    .information {
+    .information,
+    .information-2,
+    .information-3 {
         text-align: center;
+        margin-top: 0;
+    }
+
+    .information,
+    .information-3 {
         background-color: #eee;
     }
 
-    .information::after {
+    .information::after,
+    .information-3::after{
         display: none;
+    }
+
+    .information-2 .pics a {
+        margin-top: 5rem;
+    }
+    .information-2 .order {
+        order: -1;
     }
     /* End Information */
 }
@@ -222,11 +262,13 @@ p {
         font-size: 1.2rem;
     }
 
-    .information {
-        padding: 0;
+    .information, 
+    .information-2{
+        padding: 1rem;
     }
 
-    .information p {
+    .information p,
+    .information-2 p {
         font-size: 1rem;
     }
     /* End Information */
