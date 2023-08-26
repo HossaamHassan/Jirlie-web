@@ -43,6 +43,7 @@ p {
     background-color: #00000080;
     border-radius: 7px;
 }
+
 /* End Global Rules */
 
 /* Start Navbar */
@@ -205,6 +206,31 @@ p {
 }
 /* End Information */
 
+/* Start Subscribe */
+
+.subscribe .art img {
+    width: 20%;
+}
+
+.subscribe form {
+    width: 75%;
+}
+
+.subscribe form input {
+    background: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.subscribe form input:focus {
+    outline: none;
+}
+
+.subscribe form a {
+    padding: 20px;
+}
+/* End Subscribe */
+
 /* Start Footer */
 @media(max-width: 992px) {
     .footer {
@@ -277,6 +303,14 @@ p {
     color: white;
     font-size: 25px;
 }
+
+@media (max-width: 768px) {
+    .foot-2 .container .info h2,
+    .foot-2 .container .contact h2,
+    .foot-2 .container .links h2 {
+        font-size: 20px;
+    }
+}
 .foot-2 .container .info ul {
     padding: 0px 5px;
 }
@@ -291,21 +325,12 @@ p {
 .foot-2 .container .info li:hover {
     color: #337CCF;
 }
-@media(max-width: 992px) {
-    .foot-2 .container .links  {
-        margin: auto;
-    }
-}
+
 
 .foot-2 .container .links ul {
     padding: 0;
 }
 
-@media (max-width: 992px) {
-    .foot-2 .container .links ul {
-        padding-left: 3rem;
-    }
-}
 
 .foot-2 .container .links a {
     display: flex;
@@ -335,11 +360,7 @@ p {
     gap: 8px;
     margin-bottom: 30px;
 }
-@media(max-width: 992px) {
-    .foot-2 .container .contact .cont {
-        margin: 0 auto 30px;
-    }
-}
+
 .foot-2 .container .contact .cont i {
     color: #337CCF;
 }
@@ -435,6 +456,12 @@ p {
         order: -1;
     }
     /* End Information */
+
+    /* Start Footer */
+    .foot-2 {
+        text-align: left;
+    }
+    /* End Footer */
 }
 
 @media (max-width: 768px) {
@@ -481,5 +508,47 @@ p {
         font-size: 2rem;
     }
     /* End Information */
+
+    /* Start Footer */
+    .foot-2 {
+        padding-left: 2.5rem;
+    }
+    .foot-2 .container .info,
+    .foot-2 .container .links,
+    .foot-2 .container .contact {
+        text-align: left;
+        margin: 0;
+    }
+
+    .foot-2 .container .info ul,
+    .foot-2 .container .links ul,
+    .foot-2 .container .contact ul {
+        padding: 0;
+    }
+
+    .foot-2 .container .contact .cont {
+        margin: 0 0 30px 0;
+    }
+    /* End Footer */
+
+    .subscribe {
+        /* padding: 0 1rem; */
+    }
+
+    .subscribe h2 {
+        font-size: 1rem;
+    }
+
+    .subscribe form {
+        width: 100%;
+    }
+
+    .subscribe form input {
+        padding: 10px;
+    }
+
+    .subscribe form a {
+        padding: 10px;
+    }
 }
 /* End Media */
