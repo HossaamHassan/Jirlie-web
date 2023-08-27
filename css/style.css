@@ -214,6 +214,16 @@ p {
     font-size: 14px;
 }
 
+@media (max-width: 768px) {
+    .information-3 .all-pic img {
+        width: 80%;
+    }
+
+    .information-3 .all-pic span {
+        font-size: 11px;
+    }
+}
+
 .information-4 .cont {
     background-color: white;
     padding: 2rem;
@@ -403,6 +413,12 @@ p {
 }
 .foot-3 {
     background-color: #243050;
+}
+
+@media (max-width: 768px) {
+    .foot-3 .container {
+        flex-direction: column;
+    }
 }
 .foot-3 .container p {
     text-align: center;
