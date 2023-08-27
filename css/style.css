@@ -341,6 +341,10 @@ p {
     color: #337CCF;
 }
 
+.foot-2 .container .links {
+    padding: 20px 0;
+}
+
 
 .foot-2 .container .links ul {
     padding: 0;
@@ -353,8 +357,8 @@ p {
     align-items: center;
     gap: 5px;
     color: white;
-    margin-bottom: 17.5px;
     transition: var(--main-transition);
+    font-weight: bold;
 }
 .foot-2 .container .links a:hover {
     transform: translateX(10px);
@@ -364,6 +368,11 @@ p {
 }
 .foot-2 .container .links a li {
     font-size: 17px;
+}
+
+
+.foot-2 .container .links .sol-1 {
+    padding-left: 17.5px;
 }
 
 .foot-2 .container .contact {
@@ -552,8 +561,13 @@ p {
         padding: 1rem;
     }
 
+    .information-3 .info {
+        padding: 0 0.5rem;
+    }
+
     .information p,
-    .information-2 p {
+    .information-2 p,
+    .information-3 p {
         font-size: 1rem;
     }
 
